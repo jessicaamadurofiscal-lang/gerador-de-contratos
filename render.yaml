@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: gerador-contratos-sc
+    runtime: static
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Robots-Tag
+        value: noindex, nofollow
